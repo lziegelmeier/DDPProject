@@ -1,1 +1,186 @@
-default
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualizing Functions of 2 Variables</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Visualizing Functions of 2 Variables">
+  <meta name="author" content="L. Ziegelmeier">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Visualizing Functions of 2 Variables</h1>
+    <h2>An Interactive Tool</h2>
+    <p>L. Ziegelmeier<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2><font color="blue">Visualizing Functions</font></h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Functions of both 1 and 2 variables can be easily visualized.<br></li>
+<li>Students spend quite a bit of time learning to graph or display in a table functions of 1 variable.</li>
+<li>Yet, because of time constaints, often much less time is devoted to visualizing functions of 2 variables.</li>
+<li>Visualizing functions of 2 variables can be easily accomplished via a computer or graphing calculator.</li>
+</ul>
+
+<p>This web application--created using Shiny--helps students to visualize functions of 2 variables (meaning 2 independent variables corresponding to a single dependent variable) by displaying such functions as a surface plot, a contour plot, or a table of values.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2><font color="blue">Functions of Interest</font></h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A choice of function to visualize can be chosen from a list of important functions, selected both for their common usage as well as distinct forms.</p>
+
+<ul>
+<li>\(x^2+y^2\) a paraboloid</li>
+<li>\(e^{-(x^2+y^2)}\) an exponential </li>
+<li>\(x^2-y^2\) a saddle</li>
+<li>\(xy\) a hyperbolic paraboloid</li>
+<li>\(\cos(x)+\sin(y)\) a periodic function</li>
+<li>\(x+y\) a plane</li>
+<li>\(\sqrt(x^2+y^2)\) a cone</li>
+<li>\(-y^2\) a parabolic cylinder</li>
+</ul>
+
+<p>The domain of input values over which to visualize the chosen function may be selected using sliders.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2><font color="blue">An Example</font></h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Function \(x^2+y^2\) over the domain \(-5\leq x \leq 5\)  and \(-5 \leq y \leq 5\)</p>
+
+<p><img src="Surface.png" height="200px" width="250px" />
+<img src="Contour.png" height="200px" width="250px" />
+<img src="Table.png" height="350px" width="450px" /></p>
+
+<p>Surface plot, contour plot, table</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2><font color="blue">Evaluation at Specified Input</font></h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Finally, a user may input specific x and y values at which to evaluate the selected function. </p>
+
+<p>For example,</p>
+
+<pre><code class="r">myfun &lt;- function (x,y) {
+   x^2+y^2
+ } 
+myfun(x=3,y=7)
+</code></pre>
+
+<pre><code>## [1] 58
+</code></pre>
+
+<h2><font color="blue">Conclusion</font></h2>
+
+<p><SPAN style="BACKGROUND-COLOR: orange">This web application provides an interactive tool to easily visualize common functions of two variables by displaying the functions using three different methods, while using reactive arguments to update input domains and evaluate the function.</SPAN></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='<font color="blue">Visualizing Functions</font>'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='<font color="blue">Functions of Interest</font>'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='<font color="blue">An Example</font>'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='<font color="blue">Evaluation at Specified Input</font>'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
